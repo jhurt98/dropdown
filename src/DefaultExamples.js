@@ -41,7 +41,7 @@ function DefaultExamples() {
         <div className="example" >
             <Dropdown options={sampleOptions} defaultValue={"Select Multiple"} selectedValue={selectedValue} handleSelect={handleSelect} multi={true}/>
             <Dropdown options={pokemon} selectedValue={selectedPokemon} handleSelect={handlePokemonSelect}/>
-            <Dropdown options={pokemon} selectedValue={selectedPokemon2} handleSelect={handlePokemonSelect2} handleSetAllSelections={handleSetAllSelections} multi={true}/>
+            <Dropdown options={pokemon} defaultValue={"Pick Pokemon"} selectedValue={selectedPokemon2} handleSelect={handlePokemonSelect2} handleSetAllSelections={handleSetAllSelections} multi={true}/>
             <div style={{"width": "50px"}}>
                 Selections
                 <ul> 

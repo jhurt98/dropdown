@@ -64,7 +64,7 @@ function CustomStyleExamples() {
             <p>Using a custom object with properties that correspond to classname, you can add custom styling to different elements of the dropdown UI: </p>
             <div className="example">
                 <Dropdown options={pokemon} selectedValue={selectedPokemon} handleSelect={handlePokemonSelect} customStyle={customStyle1}/>
-                <Dropdown options={pokemon} selectedValue={selectedPokemon2} handleSelect={handlePokemonSelect2} customStyle={customStyle2}/>
+                <Dropdown options={pokemon} defaultValue={"Pick a pokemon!"} selectedValue={selectedPokemon2} handleSelect={handlePokemonSelect2} customStyle={customStyle2}/>
                 <Dropdown options={sampleOptions} selectedValue={selectedOption3} handleSelect={handleOptionSelect3} customStyle={customStyle3}/>
             </div>
         </>

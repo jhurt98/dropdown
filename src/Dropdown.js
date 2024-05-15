@@ -57,6 +57,7 @@ function Dropdown(props) {
         if (props.handleSetAllSelections) {
             props.handleSetAllSelections(newSelections);
         }
+        setIsOpen(!isOpen);
     }
 
     function buildOptions() {
@@ -68,10 +69,11 @@ function Dropdown(props) {
                                             customStyle={customStyle}/>
                                       : null;
 
+        const deselectAllText = props.multi ? "Deselect All" : "Deselect";
         const deselectAll = <Option 
                                 handleSelect={handleDeselectAll} 
                                 key={"deselect"} 
-                                value={"Deselect all"} 
+                                value={deselectAllText} 
                                 selected={false}
                                 customStyle={customStyle}/>;
 
