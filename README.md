@@ -11,3 +11,6 @@ To test:
 
 Implementation details
 - the main file to look at is ./src/Dropdown.js
+
+
+![output](https://github.com/jhurt98/dropdown/assets/47939128/fc2ed55e-1880-4010-956e-c4af3d4adf1f)
